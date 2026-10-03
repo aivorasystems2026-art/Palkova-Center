@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<title>Palkova Centre, Trichy | பால்கோவா சென்டர், திருச்சி</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Hind+Madurai:wght@400;500;600&family=Noto+Serif+Tamil:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav>
+<b><img src="images/logo.png" alt="PPC logo"><span data-t="brand"></span></b>
+<a class="h" href="#menu" data-t="nMenu"></a><a class="h" href="#order" data-t="nOrder"></a><a class="h" href="#reviews" data-t="nRev"></a><a class="h" href="#visit" data-t="nVisit"></a>
+<button class="lang" id="lang" aria-label="Language">தமிழ்</button>
+</nav></div></header>
+
+<div class="hero"><div class="wrap">
+<div>
+<h1><span data-t="h1"></span><small data-t="h1s"></small></h1>
+<p data-t="heroP"></p>
+<div class="row"><a href="#order"><button class="btn" data-t="cta"></button></a><a href="#reviews"><button class="btn alt" data-t="cta2"></button></a></div>
+</div>
+<img class="logo-hero" src="images/logo.png" alt="PPC cow and calf emblem">
+</div></div>
+
+<section id="menu"><div class="wrap">
+<h2 data-t="menuH"></h2><p class="sub" data-t="menuS"></p>
+<div class="grid" id="products"></div>
+</div></section>
+
+<section id="order" style="background:var(--bg);border-top:1px solid var(--line)"><div class="wrap">
+<h2 data-t="orderH"></h2><p class="sub" data-t="orderS"></p>
+<div class="order">
+<div class="cart"><h3 data-t="cartH"></h3><div id="cartLines"></div><div class="tot"><span data-t="total"></span><span id="total">₹0</span></div></div>
+<div class="cart">
+<h3 data-t="detH"></h3>
+<label for="nm" data-t="name"></label><input id="nm" autocomplete="name">
+<label for="ph" data-t="phone"></label><input id="ph" type="tel" autocomplete="tel">
+<label for="ad" data-t="addr"></label><textarea id="ad" rows="3" autocomplete="street-address"></textarea>
+<p class="msg" id="omsg"></p>
+<button class="btn" id="place" data-t="place"></button>
+</div></div>
+</div></section>
+
+<section id="about" style="border-top:1px solid var(--line)"><div class="wrap about">
+<div><h2 data-t="abH"></h2><p data-t="abP"></p></div>
+<div class="facts"><div data-t="f1"></div><div data-t="f2"></div><div data-t="f3"></div></div>
+</div></section>
+
+<section id="reviews" style="border-top:1px solid var(--line)"><div class="wrap">
+<h2 data-t="revH"></h2>
+<div class="order">
+<div class="rev">
+<div class="rhead"><div class="avg" id="avg">–</div><div><div class="stars" id="avgStars"></div><div id="cnt" style="color:var(--mut);font-size:14px"></div></div></div>
+<div id="list"></div>
+</div>
+<div class="rev">
+<h3 data-t="wr"></h3>
+<div class="starin" id="starin" role="radiogroup"></div>
+<label for="rn" data-t="name"></label><input id="rn">
+<label for="rt" data-t="yourRev"></label><textarea id="rt" rows="4"></textarea>
+<p class="msg" id="rmsg"></p>
+<button class="btn" id="post" data-t="post"></button>
+</div></div>
+</div></section>
+
+<footer id="visit"><div class="wrap">
+<h3 style="margin-bottom:8px" data-t="brand"></h3>
+<div data-t="addrLine"></div>
+<div data-t="hours"></div>
+<div>☎ +91 00000 00000</div>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
